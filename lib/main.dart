@@ -24,9 +24,23 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.orange,
-      appBar: AppBar(),
+      // appBar: AppBar(),
+      body: SafeArea(
+        child: Container(
+          width: double.infinity,
+          child: const Text(
+            'Hilal',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.purple,
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
