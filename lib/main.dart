@@ -25,21 +25,82 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.grey,
       // appBar: AppBar(),
       body: SafeArea(
-        child: Container(
-          width: double.infinity,
-          child: const Text(
-            'Hilal',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.purple,
-              fontSize: 40,
-              fontWeight: FontWeight.bold,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(child: 
+            Container(
+         color: Colors.blue,
+          child: Center(
+            child:  Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+               children: [
+              const  Text(
+              'Hilal',           
+                style: TextStyle(
+                color: Colors.purple,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              TextButton(onPressed: (){
+              print("Button clicked");
+            }, child: const Text("Click Me")),
+              IconButton(onPressed: (){
+                print("icon button pressed");
+              }, icon: Icon(Icons.mic)),
+            ],),
+            ElevatedButton(onPressed: (){
+              print(" new Button clicked");
+            }, child: const Text("Click Me")),
+              ],
+            )
           ),
         ),
+            ),
+        Expanded(child: 
+        Container(
+          color: Colors.deepPurple,
+          child: Center(
+            child:  Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+               children: [
+              const  Text(
+              'Hilal',           
+                style: TextStyle(
+                color: Colors.purple,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              TextButton(onPressed: (){
+              print("Button clicked");
+            }, child: const Text("Click Me")),
+              IconButton(onPressed: (){
+                print("icon button pressed");
+              }, icon: Icon(Icons.mic)),
+            ],),
+            ElevatedButton(onPressed: (){
+              print(" new Button clicked");
+            }, child: const Text("Click Me")),
+              ],
+            )
+          ),
+        )
+        ),
+          ],
+        )
       ),
     );
   }
