@@ -31,7 +31,9 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Expanded(child: 
+            Expanded(
+              flex: 2,
+              child: 
             Container(
          color: Colors.blue,
           child: Center(
@@ -65,7 +67,22 @@ class HomePage extends StatelessWidget {
           ),
         ),
             ),
-        Expanded(child: 
+        Expanded(
+          flex: 1,
+          child:  Container(
+            decoration:  BoxDecoration(
+              color: Colors.amber,
+              borderRadius:BorderRadius.circular(40),
+              border: Border.all(
+                color: Colors.green,
+                width: 10,
+              )
+            ),
+            child: Center(child: const Text("New text")),
+          )),
+        Expanded(
+          flex:2,
+          child: 
         Container(
           color: Colors.deepPurple,
           child: Center(
