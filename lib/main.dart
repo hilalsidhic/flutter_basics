@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_flutter/listviewhome.dart';
 import 'package:sample_flutter/screen_home.dart';
 
 void main(List<String> args) {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme:ThemeData(
         primarySwatch: Colors.blue,  
       ),
-      home: ScreenHome(),
+      home: listViewer(),
     );
   }
 }
